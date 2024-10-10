@@ -1,0 +1,11 @@
+query movies {
+    getAllMovies{
+        id
+        name
+        ratings
+        actor{
+            id
+            actor_name
+        }
+    }
+}
