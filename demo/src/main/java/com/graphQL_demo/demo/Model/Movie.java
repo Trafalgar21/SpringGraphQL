@@ -15,6 +15,7 @@ public class Movie {
     private Integer id;
 
     private String name;
+    //Fix this area
     private Integer actorId;
     private Integer ratings;
 }
