@@ -54,7 +54,7 @@ public class CustomGraphQLExceptionHandler extends DataFetcherExceptionResolverA
 
                 @Override
                 public ErrorClassification getErrorType() {
-                    return new ActorNotFoundException();
+                    return null;
                 }
 
                 @Override

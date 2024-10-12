@@ -25,6 +25,9 @@ public class DemoApplication {
 			Actor actor = new Actor();
 			actor.setActor_name("Thomas Oviedo");
 
+			Actor actor1 = new Actor();
+			actor1.setActor_name("Dave Oviedo");
+
 			Movie movie1 = new Movie();
 			movie1.setName("Matrix");
 			movie1.setRatings(5);
@@ -37,6 +40,7 @@ public class DemoApplication {
 
 
 			actorRepository.save(actor);
+			actorRepository.save(actor1);
 
 			movieRepository.save(movie1);
 			movieRepository.save(movie2);

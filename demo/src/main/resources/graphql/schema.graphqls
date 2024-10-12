@@ -1,7 +1,25 @@
 type Query {
     getAllMovies: [Movie]
     getMovieById(id: ID): Movie
+
+    getAllActors: [Actor]
+    getActorById(id: ID): Actor
 }
+
+
+type Mutation {
+    addMovie(movie: MovieInput): Movie
+    addActor(name: String): Actor
+
+    modifyMovie(id:ID, movie: MovieInput):Movie
+    modifyActor(id: ID, name: String): Actor
+
+
+    deleteActor(id: ID): String
+    deleteMovie(id: ID): String
+}
+
+
 
 type Movie {
     id: ID
@@ -15,12 +33,6 @@ type Actor {
     actor_name: String
 }
 
-type Mutation {
-    addMovie(movie: MovieInput): Movie
-    addActor(name: String): Actor
-
-    modifyActor(id: ID, name: String): Actor
-}
 
 input MovieInput {
     name: String
